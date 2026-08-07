@@ -1,0 +1,7 @@
+Tema do nosso site: Heróis
+Meu nome: Victor
+Meu usuário github: alunovictorchandia
+Meu papel: Integrador
+Minha página: Capitão América
+Eu peço aprovação para Henry
+Eu aprovo o PR de Heitor
