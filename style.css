@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lexend:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  color: white;
+}
+
+header {
+    width: 102%;
+    height: 100%;
+    background-color: transparent;
+    padding: 15px 0;
+    position: sticky;
+    margin-top: -10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+.instituto{
+  position: absolute;
+  width: 70px;
+  margin-left: 30px;
+  margin-top: -25px;
+}
+.instituto:hover{
+  cursor: pointer;
+}
+
+nav{
+  display: flex;
+  flex: 1;
+  gap: 50px;
+  justify-content: center;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(img/background-inicial.png);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+}
+h1{
+  margin: 0;
+}
+h4{
+  margin: 0;
+  font-size: 20px;
+  font-family: "Lexend", sans-serif;
+  font-weight: 100;
+}
+
+.big {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  padding-left: 120px;
+  margin-top: 200px;
+  font-size: 30px;
+}
+.secreta{
+  color: red;
+  text-shadow: 0 0 5px rgb(255, 0, 0);
+}
+
+button{
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 3px;
+  width: 180px;
+  height: 40px;
+  font-weight: 100;
+  margin-top: 20px;
+}
+button:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
