@@ -17,7 +17,7 @@ Aqui está a nossa equipe:
     *   **Papel:** Documentador(a) — Responsável por documentar o projeto e escrever este README.
 
 *   **Heitor** 🦇
-    *   **Herói / Página:** Batman (`batman.html`)
+    *   **Herói / Página:** Batman (`batmanHeitor2.html`)
     *   **Papel:** Revisor(a)-chefe — A ponte entre "aprovado" e "mesclado". Garantiu que todo PR tivesse revisor e avisou quando estavam prontos.
 
 *   **Victor** 🛡️
@@ -25,7 +25,7 @@ Aqui está a nossa equipe:
     *   **Papel:** Integrador(a) — Responsável por apertar o botão de "Merge" e integrar o código aprovado à branch principal.
 
 *   **Henry** 🕸️ 
-    *   **Herói / Página:** Homem-Aranha (`henry-spdm.html`)
+    *   **Herói / Página:** Homem-Aranha (`Henry-spdm.html`)
     *   **Papel:** Arquiteto(a) / Versionador(a) — Criou o repositório, configurou as proteções, ajudou a publicar o site e marcou a versão final.
 
 ---
@@ -40,7 +40,7 @@ Nosso projeto está publicado através do GitHub Pages!
 
 ### 2. Visualização Local (No seu computador)
 Para testar os arquivos diretamente no seu PC, siga os passos abaixo:
-1. Faça o clone deste repositório (`git clone <GitHub - AlunoHenryRodrigues/TRABALHOSOP: Trabalho de git, identidade secreta dos herois>`) ou baixe o código em formato `.zip`.
+1. Faça o clone deste repositório (`git clone <GitHub - AlunoHenryRodrigues/TRABALHOSOP: Trabalho de git, identidade secreta dos herois`) ou baixe o código em formato `.zip`.
 2. Extraia os arquivos (se baixou o zip) e entre na pasta do projeto.
 3. Basta **abrir o arquivo `index.html`** no seu navegador (Google Chrome, Firefox, Edge, etc.).
 4. A partir da página inicial, você poderá navegar por todas as páginas dos heróis utilizando os links disponíveis.
