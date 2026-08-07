@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Batman</title>
+    <link rel="icon" type="imagens/png" href="img/batman-3x4.jpg">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background:
+                linear-gradient(rgba(0,0,0,0.85),
+                rgba(0,0,0,0.95)),
+                url("quadrinho-de-batman.webp");
+            background-size: cover;
+            background-attachment: fixed;
+            color: #e5e5e5;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    header {
+    width: 100%;
+    height: 100%;
+    padding: 15px 0;
+    position: sticky;
+    margin-top: 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+.instituto{
+  position: absolute;
+  width: 70px;
+  margin-left: 30px;
+  margin-top: -25px;
+}
+.instituto:hover{
+  cursor: pointer;
+}
+
+nav{
+  display: flex;
+  flex: 1;
+  gap: 50px;
+  justify-content: center;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+        main {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .personagens {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: rgba(20, 20, 20, 0.95);
+            border: 2px solid #f0c808;
+            border-radius: 15px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 20px rgba(240, 200, 8, 0.5);
+        }
+
+        .card h2 {
+            color: #f0c808;
+            margin-bottom: 15px;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid #444;
+        }
+
+        .conteudo {
+            margin-top: 50px;
+            background-color: rgba(15, 15, 15, 0.95);
+            padding: 30px;
+            border-left: 6px solid #f0c808;
+            border-radius: 10px;
+        }
+
+        .conteudo h2 {
+            color: #f0c808;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        ol {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        p {
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .personagens {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+        button{
+  background-color: black;
+  color: white;
+  text-decoration: none ;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.direita{
+    margin-left: 0;
+}
+.esquerda:hover{
+    color: black;
+    background-color: white;
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="img/instituto.png" alt="" class="instituto">
+        </a>
+        <nav>
+            <a href="index.html">Pagina Inicial</a>
+            <a href="heitor.html">Batman</a>
+            <a href="capitao_america.html">Capitão América</a>
+            <a href="Henry-spdm.html">Homem-Aranha</a>
+            <a href="homemdeferro2.html">Homem de Ferro</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="personagens">
+            <div class="card">
+                <h2>Batman</h2>
+                <img src="data:image/jpeg;base64,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" alt="Batman">
+            </div>
+
+            <div class="card">
+                <h2>Bruce Wayne</h2>
+                <img src="https://t.ctcdn.com.br/j3TcsW35ckWvQZH8RdssJtmBmJg=/320x180/smart/i968363.jpeg" alt="Bruce Wayne">
+            </div>
+        </section>
+
+        <section class="conteudo">
+            <h2>Curiosidades</h2>
+
+            <ol>
+                <li>Batman estreou em 1939. Sua primeira aparição foi na revista Detective Comics #27, publicada em maio de 1939.</li>
+
+                <li>Ele não possui superpoderes. Diferente de muitos heróis, Batman depende apenas de inteligência, treinamento físico, tecnologia e recursos financeiros.</li>
+
+                <li>Os criadores Bob Kane e Bill Finger se inspiraram em morcegos, filmes de aventura e até nos desenhos de Leonardo da Vinci.</li>
+
+                <li>Robin surgiu em 1940 para tornar as histórias mais leves e criar alguém com quem os leitores jovens pudessem se identificar.</li>
+
+                <li>O Coringa apareceu logo no início das histórias, mas não foi planejado originalmente para ser seu maior inimigo.</li>
+            </ol>
+        </section>
+
+        <section class="conteudo">
+            <h2>História</h2>
+
+            <p>
+                O Batman é a identidade secreta de Bruce Wayne, um bilionário de Gotham City.
+                Quando criança, Bruce presenciou o assassinato de seus pais, Thomas Wayne e
+                Martha Wayne. Marcado pela tragédia, ele dedicou sua vida a combater o crime.
+                Após anos de treinamento físico, mental e investigativo, criou a identidade do
+                Batman, inspirada em morcegos para causar medo nos criminosos. Com sua
+                inteligência, tecnologia avançada e forte senso de justiça, ele protege Gotham
+                de vilões perigosos como o Coringa, tornando-se um dos maiores heróis da DC
+                Comics.
+            </p>
+            <br>
+            <div class="end">
+            <a href="index.html"><button>🠔 Página Inicial</button></a>
+            <a href="capitao_america.html" class="direita"><button>Próximo Herói ➜</button></a>
+        </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
