@@ -1,0 +1,7 @@
+Tema do nosso site: Heróis
+Meu nome: Henry de Sá Rodrigues
+Meu usuário GitHub: AlunoHenryRodrigues
+Meu papel: Arquiteto e Versionador
+Minha página: paginas/Henry-spdm.html
+Eu PEÇO aprovação para: Arthur Amorim Martins (o colega seguinte no círculo)
+Eu APROVO o PR de: Victor Chandia Backschat (o colega anterior no círculo)

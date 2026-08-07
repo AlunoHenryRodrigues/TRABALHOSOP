@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lexend:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  color: white;
+}
+
+header {
+    width: 102%;
+    height: 100%;
+    background-color: transparent;
+    padding: 15px 0;
+    position: sticky;
+    margin-top: -10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+.instituto{
+  position: absolute;
+  width: 70px;
+  margin-left: 30px;
+  margin-top: -25px;
+}
+.instituto:hover{
+  cursor: pointer;
+}
+
+nav{
+  display: flex;
+  flex: 1;
+  gap: 50px;
+  justify-content: center;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(img/background-spdm.jpg);
+}
+
+.top{
+  height: 173px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 0px;
+  font-size: 30px;
+  text-shadow: 0 0 70px rgb(0, 0, 0);
+  border: 2px solid transparent;
+  background-color: rgba(0, 0, 0, 0.316);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.636);
+}
+
+.top h1{
+  margin: 0;
+}
+.spdm{
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 40px rgb(255, 0, 0);
+}
+
+.barra {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  border: 1x solid transparent;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+img {
+  width: 30%;
+}
+.identidade{
+  margin-top: -10px;
+  align-self: flex-end;
+  margin-right: 40px;
+  border: 2px solid transparent;
+  width: 228px;
+  background-color: black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.low {
+  margin-left: 230px;
+  margin-top: -460px;
+  border: 2px solid transparent;
+  color: white;
+  width: 317px;
+  height: 459px;
+  background-color: rgba(0, 0, 0, 0.251);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;  
+}
+.curiosidades{
+  text-shadow: 0 0 40px rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  height: 100px;
+}
+.wallpaper{
+  width: 221px;
+  height: 437px;
+  margin-left: 317px;
+  margin-top: -363px;
+}
+.historia{
+  background-color: rgba(0, 0, 0, 0.578);
+}
+.origem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  height: 80px;
+  margin-top: -3px;
+  background-color: black;
+  text-shadow: 0 0 40px rgb(255, 255, 255);
+
+}
+
+button{
+  background-color: black;
+  color: white;
+  text-decoration: none ;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+button:hover{
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
+.direita{
+  margin-left: 520px;
+}
