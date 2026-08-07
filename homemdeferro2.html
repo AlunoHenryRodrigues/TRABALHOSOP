@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagens/png" href="img/ferro-3x4.jpg">
+
+    <title>Perfil do Herói - Homem de Ferro</title>
+    <style>
+        /* Variáveis de Design Stark */
+        :root {
+            --bg-main: #0a0a0c;        /* Fundo ultra escuro */
+            --bg-card: #141419;        /* Fundo dos blocos */
+            --iron-red: #d62229;       /* Vermelho armadura vibrante */
+            --iron-gold: #ffb703;      /* Dourado do Reator Arc */
+            --arc-cyan: #00f2ff;       /* Azul de energia HUD */
+            --text-light: #f8f9fa;     /* Texto claro */
+            --text-muted: #9fa0a6;     /* Texto secundário */
+        }
+header {
+    width: 102%;
+    height: 100%;
+    background-color: transparent;
+    padding: 15px 0;
+    position: sticky;
+    margin-top: -10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+.instituto{
+  position: absolute;
+  width: 70px;
+  margin-left: 30px;
+  margin-top: -25px;
+}
+.instituto:hover{
+  cursor: pointer;
+}
+
+nav{
+  display: flex;
+  flex: 1;
+  gap: 50px;
+  justify-content: center;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-main);
+    color: var(--text-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-container{
+    max-width: 680px;
+    margin: 120px auto 40px;
+}
+
+        /* Estilização dos Cards Verticais */
+        .card {
+            background-color: var(--bg-card);
+            border-radius: 16px;
+            padding: 35px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            border: 1px solid #252530;
+            border-left: 5px solid var(--iron-red); /* Detalhe lateral em vermelho */
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Efeito de hover tecnológico nos cards */
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--iron-gold);
+            box-shadow: 0 15px 30px rgba(255, 183, 3, 0.15);
+        }
+
+        /* Card de Destaque / Cabeçalho */
+        .card-header {
+            text-align: center;
+            border-left: none;
+            border-bottom: 4px solid var(--iron-red);
+        }
+
+        h1, h2 {
+            color: var(--iron-gold);
+            text-transform: uppercase;
+            margin-top: 0;
+            letter-spacing: 1.5px;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            text-shadow: 2px 2px 0px rgba(214, 34, 41, 0.5);
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.6em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Subtítulos ou tags de contexto */
+        .tagline {
+            color: var(--text-muted);
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        /* Textos */
+        p {
+            line-height: 1.7;
+            color: var(--text-light);
+            text-align: justify;
+            margin: 0 0 15px 0;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        .label {
+            font-weight: bold;
+            color: var(--iron-gold);
+            text-transform: uppercase;
+            font-size: 0.9em;
+            letter-spacing: 1px;
+        }
+
+        /* Listas de Curiosidades */
+        ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+            line-height: 1.6;
+            color: var(--text-light);
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+
+        li strong {
+            color: var(--iron-gold);
+        }
+
+        /* Containers de Imagens */
+        .foto-container {
+            text-align: center;
+            margin-top: 25px;
+            width: 100%;
+        }
+
+        .foto {
+            width: 100%;
+            max-height: 320px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 2px solid #252530;
+            transition: border-color 0.3s ease;
+        }
+
+        .card:hover .foto {
+            border-color: var(--iron-gold);
+        }
+
+        /* Rodapé / Próximos passos com estilo diferenciado */
+        .card-footer {
+            border-left: none;
+            border: 2px dashed #353545;
+            text-align: center;
+        }
+
+        .card-footer h2 {
+            justify-content: center;
+            color: var(--text-muted);
+        }
+        button{
+  background-color: black;
+  color: white;
+  text-decoration: none ;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.direita{
+    margin-left: 0;
+}
+.esquerda:hover{
+    color: black;
+    background-color: white;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="img/instituto.png" alt="" class="instituto">
+        </a>
+        <nav>
+            <a href="index.html">Pagina Inicial</a>
+            <a href="heitor.html">Batman</a>
+            <a href="capitao_america.html">Capitão América</a>
+            <a href="Henry-spdm.html">Homem-Aranha</a>
+            <a href="homemdeferro2.html">Homem de Ferro</a>
+        </nav>
+    </header>
+
+    <div class="page-container">
+        
+        <div class="card card-header">
+            <div class="tagline">Dossiê Stark Industries</div>
+            <h1>Homem de Ferro</h1>
+            <div class="foto-container">
+                <img class="foto" src="https://rollingstone.com.br/wp-content/uploads/homem_de_ferro_foto_reproducaomarvel.jpg" alt="Foto do Homem de Ferro">
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Identidade Secreta</h2>
+            <p><span class="label">Nome Real:</span> Anthony Edward "Tony" Stark</p>
+            <p><span class="label">Codinome:</span> Playboyzinho</p>
+            <p><span class="label">Status:</span> Ativo / Financiador dos Vingadores</p>
+            <div class="foto-container">
+                <img class="foto" src="https://observatoriodocinema.com.br/wp-content/uploads/2019/09/iron-man-2008-1068x580.jpg" alt="Foto do Tony Stark">
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Curiosidades do Herói</h2>
+            <ul>
+                <li><strong>Mente Brilhante:</strong> Tony Stark se formou no prestigiado MIT (Instituto de Tecnologia de Massachusetts) com apenas 17 anos de idade.</li>
+                <li><strong>Base de Operações:</strong> Ele é o principal pilar financeiro dos Vingadores, sendo o responsável por construir a Torre da equipe e o Complexo de Treinamento.</li>
+                <li><strong>Sistemas HUD Integrados:</strong> Suas armaduras operam através de interfaces de inteligência artificial ultra-avançadas criadas por ele, como o J.A.R.V.I.S. e a SEXTA-FEIRA.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>História e Origem</h2>
+            <p>
+                Tony Stark era um inventor brilhante e o principal fabricante de armas para as Forças Armadas dos EUA. Durante uma demonstração de sua nova tecnologia de mísseis em território de conflito, seu comboio foi atacado e ele acabou gravemente ferido por estilhaços de uma bomba, sendo capturado por um grupo de vilões.
+            </p>
+            <p>
+                Para impedir que os estilhaços chegassem ao seu coração, ele construiu um dispositivo magnético chamado Reator Arc, que colocou em seu próprio peito. Forçado pelos seus captores a construir uma arma de destruição em massa, Tony secretamente usou sua genialidade para criar algo diferente: uma armadura rústica e blindada (a Mark I). Com ela, ele conseguiu derrotar os inimigos e escapar do cativeiro. 
+            </p>
+            <p>
+                Ao retornar para casa, transformado pela experiência, Tony decidiu parar de fabricar armas biológicas e aperfeiçoou a armadura, adicionando cores vermelha e dourada e sistemas de voo avançados, assumindo o manto do <strong>Homem de Ferro</strong> para proteger o mundo.
+            </p>
+        </div>
+
+        <div class="card card-footer">
+            <h2>Próximos Passos</h2>
+            <p style="text-align: center;">Explore mais sobre outros heróis em nossas próximas edições.</p>
+            <p style="text-align: center; color: var(--iron-gold); font-weight: bold;">Fique atento para mais revelações e histórias de coragem!</p>
+            <br>
+            <div class="end">
+            <a href="Henry-spdm.html"><button>🠔 Herói Anterior</button></a>
+        </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

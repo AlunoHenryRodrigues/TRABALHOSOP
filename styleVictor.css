@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    width: 102%;
+    height: 100%;
+    background-color: transparent;
+    padding: 15px 0;
+    position: sticky;
+    margin-top: -10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+.instituto{
+  position: absolute;
+  width: 70px;
+  margin-left: 30px;
+  margin-top: -25px;
+}
+.instituto:hover{
+  cursor: pointer;
+}
+
+nav{
+  display: flex;
+  flex: 1;
+  gap: 50px;
+  justify-content: center;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+main {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #0b1f4d;
+    margin-bottom: 10px;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero img {
+    width: 350px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+section img {
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+ul, ol {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+blockquote {
+    background-color: #e8e8e8;
+    border-left: 5px solid #c1121f;
+    padding: 15px;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: #0b1f4d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+button{
+  background-color: black;
+  color: white;
+  text-decoration: none ;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+button:hover{
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
+.direita{
+  margin-left: 875px;
+}
+.esquerda{
+    margin-left: -15px;
+}
+.end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.direita{
+    margin-left: 0;
+}
